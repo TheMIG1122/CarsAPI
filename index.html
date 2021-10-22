@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS - API</title>
+    <style>
+.single-button {
+    padding: 5px 15px;
+    background: hsl(240deg 8% 93%);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.hidden-radio {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <input type="text" id="car-year-value"><input type="text" id="car-make-value"><input type="text" id="car-model-value">
+    <div class="single-button year-button" data-value="TEST"><input type="radio" name="year" class="hidden-radio" value="TEST">TEST</div>
+    <h2>Select Year</h2>
+    <hr>
+    <div id="all-years">
+        <div class="single-button">
+            <input type="radio" name="year" class="hidden-radio"> 2021
+        </div>
+    </div>
+    <h2>Select Make</h2>
+    <hr>
+    <div id="all-make">
+    </div>
+    <h2>Select Model</h2>
+    <hr>
+    <div id="all-model">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="files/script.js"></script>
+</body>
+</html>
